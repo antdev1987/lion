@@ -18,49 +18,60 @@
 
     <title>Document</title>
   </head>
-  <body>
-    <div class="form">
-      <div class="form__box box">
-        <form action="/application.html" class="form__content box__content c-white pY-5 pX-3">
-          <input type="text" placeholder="Nombre" class="form__input w-100" />
+  <body class="line">
+    <div class="form container">
+      <div class="form__box--1 flex-1 text-center">
+        <img src="images/LOGO.svg" alt="" class="form__logo" loading="lazy" />
+      </div>
+      <div class="flex-1">
+        <div class="form__box box">
+          <form
+            action="/application.html"
+            class="form__content box__content c-white pY-5 pX-3"
+          >
+            <input type="text" placeholder="Nombre" class="form__input w-100" />
 
-          <input
-            type="text"
-            placeholder="Apellido"
-            class="form__input w-100 mT-2"
-          />
+            <input
+              type="text"
+              placeholder="Apellido"
+              class="form__input w-100 mT-2"
+            />
 
-          <input
-            type="email"
-            placeholder="Email"
-            class="form__input w-100 mT-2"
-          />
+            <input
+              type="email"
+              placeholder="Email"
+              class="form__input w-100 mT-2"
+            />
 
-          <input
-            type="password"
-            placeholder="Contraseña"
-            class="form__input w-100 mT-2"
-          />
+            <input
+              type="password"
+              placeholder="Contraseña"
+              class="form__input w-100 mT-2"
+            />
 
-          <label class="d-flex align-items-center gap-1 mT-2">
-            <input type="checkbox" class="form__checkbox" />
-            <p>
-              Acepto los
-              <span class="c-yellow-dark">Términos y Condiciones</span>
-            </p>
-          </label>
+            <label class="d-flex align-items-center gap-1 mT-2">
+              <input type="checkbox" class="form__checkbox" />
+              <p>
+                Acepto los
+                <span class="c-yellow-dark">Términos y Condiciones</span>
+              </p>
+            </label>
 
-          <button type="submit" class="btn btn--submit btn--yellow mY-2 w-100">
-            Iniciar sesión
-          </button>
-
-          <p class="text-center">
-            Ya tienes una cuenta?
-            <a href="index.html" class="c-yellow-dark text-decoration-none">
+            <button
+              type="submit"
+              class="btn btn--submit btn--yellow mY-2 w-100"
+            >
               Iniciar sesión
-            </a>
-          </p>
-        </form>
+            </button>
+
+            <p class="text-center">
+              Ya tienes una cuenta?
+              <a href="index.html" class="c-yellow-dark text-decoration-none">
+                Iniciar sesión
+              </a>
+            </p>
+          </form>
+        </div>
       </div>
     </div>
   </body>
