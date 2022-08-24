@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form">
+      <div class="form__box box">
+        <form class="form__content box__content c-white pY-5 pX-3">
+          <input type="text" placeholder="Nombre" class="form__input w-100" />
+
+          <input
+            type="text"
+            placeholder="Apellido"
+            class="form__input w-100 mT-2"
+          />
+
+          <input
+            type="email"
+            placeholder="Email"
+            class="form__input w-100 mT-2"
+          />
+
+          <input
+            type="password"
+            placeholder="Contraseña"
+            class="form__input w-100 mT-2"
+          />
+
+          <label class="d-flex align-items-center gap-1 mT-2">
+            <input type="checkbox" class="form__checkbox" />
+            <p>
+              Acepto los
+              <span class="c-yellow-dark">Términos y Condiciones</span>
+            </p>
+          </label>
+
+          <button type="submit" class="btn btn--submit btn--yellow mY-2 w-100">
+            Iniciar sesión
+          </button>
+
+          <p class="text-center">
+            No tienes una cuenta?
+            <a href="#" class="c-yellow-dark text-decoration-none"
+              >Registrate aquí</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

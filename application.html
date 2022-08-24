@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="layout d-flex">
+      <!-- nav -->
+      <nav class="navbar">
+        <ul class="navbar__box d-flex flex-direction-column">
+          <li class="navbar__linkbox">
+            <a href="#" class="navbar__link active">Dashboard</a>
+          </li>
+          <li class="navbar__linkbox">
+            <a href="#" class="navbar__link">Wallet</a>
+          </li>
+          <li class="navbar__linkbox">
+            <a href="#" class="navbar__link">Market</a>
+          </li>
+          <li class="navbar__linkbox">
+            <a href="#" class="navbar__link">Favoritos</a>
+          </li>
+          <li class="navbar__linkbox">
+            <a href="#" class="navbar__link">Estadísticas</a>
+          </li>
+
+          <li class="navbar__linkbox">
+            <a href="#" class="navbar__link">Configuración</a>
+          </li>
+
+          <li class="navbar__linkbox mT-auto">
+            <a href="#" class="navbar__link">Cerrar Sesión</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- nav -->
+
+      <!-- content -->
+      <main class="content">
+        <div class="dashboard">
+          <h2 class="c-white">Dashboard</h2>
+          <div class="d-flex gap-3">
+            <div class="dashboard__box flex-1 box">
+              <div class="box__content c-white pY-5 pX-3"></div>
+            </div>
+
+            <div class="dashboard__box flex-2 box">
+              <div class="box__content c-white pY-5 pX-3"></div>
+            </div>
+
+            <div class="dashboard__box flex-1 box">
+              <div class="box__content c-white pY-5 pX-3"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard mT-2">
+          <h2 class="c-white">Trending This Week</h2>
+          <div class="d-flex gap-3">
+            <div class="dashboard__box flex-1 box">
+              <div class="box__content box__content--trending c-white">
+                <footer class="box"></footer>
+              </div>
+            </div>
+
+            <div class="dashboard__box flex-1 box">
+              <div class="box__content box__content--trending c-white">
+                <footer class="box"></footer>
+              </div>
+            </div>
+
+            <div class="dashboard__box flex-1 box">
+              <div class="box__content box__content--trending c-white">
+                <footer class="box"></footer>
+              </div>
+            </div>
+
+            <div class="dashboard__box flex-1 box">
+              <div class="box__content box__content--trending c-white">
+                <footer class="box"></footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- content -->
+    </div>
+  </body>
+</html>
