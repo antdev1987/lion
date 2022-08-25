@@ -18,33 +18,84 @@
 
     <title>Document</title>
   </head>
-  <body>
+  <body class="application">
     <div class="layout d-flex">
       <!-- nav -->
-      <nav class="navbar">
+      <nav class="navbar" id="nav">
+        <div class="navbar__responsive">
+          <a href="#nav" class="navbar__open">
+            <img src="images/IconosSVGS/Tipo=align-justify.svg" alt="" />
+          </a>
+          <a href="#close" class="navbar__close">
+            <img src="images/IconosSVGS/Tipo=trash-2.svg" alt="" />
+          </a>
+        </div>
+
         <ul class="navbar__box d-flex flex-direction-column">
-          <li class="navbar__linkbox">
-            <a href="#" class="navbar__link active">Dashboard</a>
+          <li class="text-center pY-2">
+            <img
+              src="images/LOGO.svg"
+              alt=""
+              loading="lazy"
+              class="navbar__logo"
+            />
           </li>
           <li class="navbar__linkbox">
-            <a href="#" class="navbar__link">Wallet</a>
+            <a
+              href="#"
+              class="navbar__link active d-flex align-items-center gap-1"
+            >
+              <span class="icon icon--dashboard"></span>
+
+              Dashboard
+            </a>
           </li>
           <li class="navbar__linkbox">
-            <a href="#" class="navbar__link">Market</a>
+            <a href="#" class="navbar__link d-flex align-items-center gap-1">
+              <span class="icon icon--wallet"></span>
+
+              Wallet
+            </a>
           </li>
           <li class="navbar__linkbox">
-            <a href="#" class="navbar__link">Favoritos</a>
+            <a href="#" class="navbar__link d-flex align-items-center gap-1">
+              <span class="icon icon--market"></span>
+
+              Market</a
+            >
           </li>
           <li class="navbar__linkbox">
-            <a href="#" class="navbar__link">Estadísticas</a>
+            <a href="#" class="navbar__link d-flex align-items-center gap-1">
+              <span class="icon icon--favoritos"></span>
+
+              Favoritos</a
+            >
+          </li>
+          <li class="navbar__linkbox">
+            <a href="#" class="navbar__link d-flex align-items-center gap-1">
+              <span class="icon icon--estadisticas"></span>
+
+              Estadísticas</a
+            >
           </li>
 
           <li class="navbar__linkbox">
-            <a href="#" class="navbar__link">Configuración</a>
+            <a href="#" class="navbar__link d-flex align-items-center gap-1">
+              <span class="icon icon--confi"></span>
+
+              Configuración</a
+            >
           </li>
 
           <li class="navbar__linkbox mT-auto">
-            <a href="index.html" class="navbar__link">Cerrar Sesión</a>
+            <a
+              href="index.html"
+              class="navbar__link d-flex align-items-center gap-1"
+            >
+              <span class="icon icon--cerrar"></span>
+
+              Cerrar Sesión</a
+            >
           </li>
         </ul>
       </nav>
@@ -52,8 +103,33 @@
 
       <!-- content -->
       <main class="content">
-        <div class="dashboard">
-          <h2 class="c-white">Dashboard</h2>
+        <img src="images/Lines.svg" alt="" class="content__line" />
+
+        <div class="content__bar d-flex align-items-center gap-3">
+          <div class="content__input d-flex align-items-center">
+            <input
+              type="text"
+              placeholder="Buscar..."
+              class="form__input form__input--content w-100"
+            />
+            <button class="content__search btn">
+              <img src="images/IconosSVGS/Tipo=zoom-in.svg" alt="" />
+            </button>
+          </div>
+
+          <div>
+            <img
+              src="images/IconosSVGS/Tipo=bell.svg"
+              alt=""
+              class="content__bell"
+            />
+          </div>
+
+          <div class="content__profile"></div>
+        </div>
+
+        <div class="dashboard mT-1">
+          <h2 class="c-white font-montserrat">Dashboard</h2>
           <div class="d-flex gap-3">
             <div class="dashboard__box flex-1 box">
               <div class="box__content c-white pY-5 pX-3"></div>
@@ -70,7 +146,7 @@
         </div>
 
         <div class="dashboard mT-2">
-          <h2 class="c-white">Trending This Week</h2>
+          <h2 class="c-white font-montserrat">Trending This Week</h2>
           <div class="d-flex gap-3">
             <div class="dashboard__box flex-1 box">
               <div class="box__content box__content--trending c-white">
