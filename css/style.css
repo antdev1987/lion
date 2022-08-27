@@ -310,15 +310,27 @@ html {
   width: 100%;
 }
 
+.form__logo {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.form__logo--small {
+  display: none;
+  
+  max-width: 10rem;
+
+  margin-bottom: 1.5rem;
+}
+
 @media (max-width: 50rem) {
   .form__box--1 {
     display: none;
   }
-}
 
-.form__logo {
-  width: 100%;
-  max-width: 30rem;
+  .form__logo--small {
+    display: inline-block;
+  }
 }
 
 .form__box {
